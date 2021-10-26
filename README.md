@@ -10,5 +10,5 @@ colores  (2 x 1 = 2 (Número Par)) <BR>
 <LI>Cada tabla debe tener el título “Tabla del N” 
 <LI>Cada tabla de multiplicar debe ser 1 x N hasta 10 x N;
 
-# HTML-CSS-and-javasript A-Web-Design
+# HTML-CSS-and-JavaScript A-Web-Design
 Code repository for HTML CSS and JavaScript for Beginners - A Web Design
