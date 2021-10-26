@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL="stylesheet" TYPE="text/css" HREF="estilotabla.css">
+    <title>Tablas de Multiplicar</title>
+</head>
+<!-- 
+Asignación 2: Curso de Programador Junior
+Proyecto: Jóvenes Resilientes contra la violencia
+Programador: KAREN VANESA CARDONA PÉREZ
+Fecha: martes 12/10/2021
+
+Descripción: Crear una página web que solicite al usuario un número entero positivo “N” luego se debe de crear las tablas de multiplicar del 1 hasta el número “N”. 
+            -Cada resultado de la multiplicación debe indicarnos si es par o impar, por medio de texto y colores  (2 x 1 = 2 (Número Par)) 
+                o  Si es será Par de color Azul 
+                o  Si es Impar será color Tomate
+            -Las tablas deben mostrase 3 columnas por fila 
+            -Cada tabla debe tener el título “Tabla del N” 
+            -Cada tabla de multiplicar debe ser 1 x N hasta 10 x N
+-->
+<body>
+    <h1>Tablas de Multiplicar</h1>
+    <script>
+        var n = prompt("Ingrese un N° entero positivo", "");
+        if( n > "0" ) {
+    
+            for(a = 1;a<=n;a++){
+                document.write("<div class=\"tabla\" >");
+                document.write("<h2>Tabla del "+ a +"</h2>");
+                document.write("<ul>");
+                /*Sea "a" el multiplicando
+                  Sea "b" el multiplicador
+                  Sea "c" el producto
+                */
+                    for(b = 1;b<=10;b++){
+                        document.write("<li  >");
+                        var c;
+                        c=a*b;
+                        document.write("<div  class=\"tablali\"   >"+b + "  x " + a + "= " +  c+" "+"</div>");
+                        if(c%2==0){
+                            document.write("<div class=\"par\" > Par</div>");
+                            //document.write(" es par");
+                            //document.write("</p>");
+                        }
+                        else{
+                            document.write("<div class=\"impar\" > Impar</div>");
+                            //document.write(" es impar ");
+                        }
+                        document.write("</li>");
+                    }
+                    document.write("</ul>");
+                    document.write("</div>");
+            }
+    
+        }
+        else
+        {
+            alert("Ingrese un NUMERO > 0): El N° [" + n + "] no es entero positivo");
+        }
+
+    </script>
+</body>
+</html>
